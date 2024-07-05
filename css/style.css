@@ -1,0 +1,181 @@
+.acc-head {
+    color: white;
+    backdrop-filter: blur(5px);
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.48);
+
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.acc-body {
+    padding: 10px;
+    background-color: rgb(210, 230, 250);
+    cursor: pointer;
+    display: none;
+}
+
+.section {
+    height: 200px;
+    overflow: hidden;
+    transition: all .5s;
+    cursor: pointer;
+
+    img {
+        height: 100%;
+    }
+}
+
+.section:not(:hover) {
+    /* width: 30%; */
+    flex-shrink: 500;
+}
+
+.sidenav {
+    z-index: 999;
+    left: 0px;
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+
+    #closeicon {
+        color: red;
+        position: absolute;
+        right: 0;
+        margin: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    #closeicon:hover {
+        scale: 1.3;
+    }
+}
+
+.show {
+    left: 0;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navitems {
+    margin-top: 30px;
+}
+
+.navitem {
+    color: white;
+    padding-block: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.navitem:hover {
+    color: rgb(255, 179, 0);
+}
+
+.active {
+    color: tomato;
+}
+
+.active:hover {
+    color: tomato;
+}
+
+
+
+#home {
+    height: 800px;
+    background: linear-gradient(rgba(0, 0, 0, 0.458), rgba(0, 0, 0, 0.675)), url('../images/54684.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.hometitle {
+    color: rgba(255, 255, 255, 0.906);
+    font-size: 130px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+}
+
+#duration {
+    /* min-height: 100vh; */
+    padding-inline: 30%;
+    padding-top: 100px !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.675), rgba(0, 0, 0, 0.700)), url('../images/54684.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        background-color: rgba(255, 255, 255, 0.262);
+        backdrop-filter: blur(5px);
+        color: white;
+        border: 3px solid rgba(255, 255, 255, 0.487);
+    }
+}
+
+#films {
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.741)), url('../images/54684.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-block: 80px;
+    padding-inline: 10%;
+
+}
+
+.movie {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.124);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 20px -5px rgba(255, 200, 0, 0.43);
+    -webkit-box-shadow: 0px 0px 20px -5px rgba(255, 200, 0, 0.43);
+    -moz-box-shadow: 0px 0px 20px -5px rgba(255, 200, 0, 0.43);
+    transition: all .5s;
+}
+
+.movie:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
+#details {
+    background: linear-gradient(rgba(0, 0, 0, 0.740), rgba(0, 0, 0, 0.800)), url('../images/54684.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    #my-accordion {
+        width: 70%;
+    }
+}
+
+#contact {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.884)), url('../images/54684.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.timer {
+    width: fit-content;
+    padding-inline: 10px;
+    font-size: 120px;
+}

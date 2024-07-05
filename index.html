@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marvel Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/Marvel-Studios-Logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <i id="closeicon" class="fa-solid fa-xmark"></i>
+        <div class="navitems p-3 d-flex flex-column">
+            <a class="navitem" href="#home">home</a>
+            <a class="navitem" href="#duration">duration</a>
+            <a class="navitem" href="#details">details</a>
+            <a class="navitem" href="#contact">contact</a>
+        </div>
+    </div>
+
+    <div id="home">
+        <div class="container d-grid h-100">
+            <div class="show bg-danger">
+                <i id="itemicon" class="fa-solid fa-list"></i>
+                <div>items</div>
+            </div>
+            <div class="m-auto text-center">
+                <h1 class="hometitle">MARVEL STUDIO</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="duration" class="py-2">
+        <!-- <input id="timerinput" type="date" class="form-control w-25 m-auto mt-5" placeholder="seconds timer">
+        <div class="text-center mt-2">
+            <button id="timerstart" class="btn btn-dark rounded-pill">start</button>
+            <button id="stop" class="btn btn-danger rounded-pill">stop</button>
+            <button id="mute" class="btn btn-warning rounded-pill">mute</button>
+            <button id="reset" class="btn btn-primary rounded-pill">reset</button>
+        </div>
+        <div class="timer m-auto text-center ">00</div> -->
+
+
+
+
+        <!-- countdown -->
+        <div class="container py-3 rounded-4">
+            <div class="timecount row text-center fs-1">
+                <div class="col-md-3">
+                    <div class="days">
+                        <h3 class="text-warning">days</h3>
+                        <div id="days">00</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="hours">
+                        <h3 class="text-warning">hours</h3>
+                        <div id="hours">00</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="min">
+                        <h3 class="text-warning">min</h3>
+                        <div id="min">00</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sec">
+                        <h3 class="text-warning">sec</h3>
+                        <div id="sec">00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="films">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-3">
+                    <div class="movie p-3 rounded-4 text-light">
+                        <div class="photo">
+                            <img src="images/ironman1.jpg" class="w-100 rounded" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Iron Man 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, natus?</p>
+                            <a class="btn seetime btn-danger" date="2024-07-14T23:59:59" href="#duration">see time</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="movie p-3 rounded-4 text-light">
+                        <div class="photo">
+                            <img src="images/ironman2.jpg" class="w-100 rounded" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Iron Man 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, natus?</p>
+                            <a class="btn seetime btn-danger" date="2024-08-14T23:59:59" href="#duration">see time</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="movie p-3 rounded-4 text-light">
+                        <div class="photo">
+                            <img src="images/ironman3.jpeg" class="w-100 rounded" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Iron Man 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, natus?</p>
+                            <a class="btn seetime btn-danger" date="2024-09-14T23:59:59" href="#duration">see time</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="movie p-3 rounded-4 text-light">
+                        <div class="photo">
+                            <img src="images/thor2011.jpeg" class="w-100 rounded" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Thor 2011</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, natus?</p>
+                            <a class="btn seetime btn-danger" date="2024-10-14T23:59:59" href="#duration">see time</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="movie p-3 rounded-4 text-light">
+                        <div class="photo">
+                            <img src="images/avengersageofultron.jpg" class="w-100 rounded" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Avengers: Age of ultron</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, natus?</p>
+                            <a class="btn seetime btn-danger" date="2024-11-14T23:59:59" href="#duration">see time</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="movie p-3 rounded-4 text-light">
+                        <div class="photo">
+                            <img src="images/avengers2012.jpeg" class="w-100 rounded" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Avengers 2012</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, natus?</p>
+                            <a class="btn seetime btn-danger" date="2024-12-14T23:59:59" href="#duration">see time</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="details" class="py-5 w-100 position-relative">
+        <div id="my-accordion" class="rounded overflow-hidden m-auto">
+            <div class="accItem">
+                <div class="acc-head defaultsec">Iron Man</div>
+                <div class="acc-body">
+                    <p class="fw-bold ">Real name: <span class="fw-normal">tony stark</span></p>
+                    <p class="fw-bold ">First Appearance: <span class="fw-normal"> Tales of Suspense #39
+                            (1963)</span></p>
+                    <p class="fw-bold ">Creators: <span class="fw-normal">Stan Lee, Larry Lieber, Don Heck, and Jack
+                            Kirby</span></p>
+                    <p class="fw-bold ">Powers/Abilities: <span class="fw-normal"> Genius-level intellect, expert
+                            engineer and businessman, powered armor suit granting superhuman strength, flight, energy
+                            blasts, and an array of weapons and gadgets.</span></p>
+                </div>
+            </div>
+            <div class="accItem">
+                <div class="acc-head">Thor</div>
+                <div class="acc-body">
+                    <p class="fw-bold ">Real name: <span class="fw-normal">Thor Odinson</span></p>
+                    <p class="fw-bold ">First Appearance: <span class="fw-normal">Journey into Mystery #83
+                            (1962)</span></p>
+                    <p class="fw-bold ">Creators: <span class="fw-normal">Stan Lee, Larry Lieber, and Jack
+                            Kirby</span></p>
+                    <p class="fw-bold ">Powers/Abilities: <span class="fw-normal"> Superhuman strength, speed,
+                            durability, and longevity; weather manipulation; ability to fly using Mjolnir; energy
+                            projection; ability to travel between dimensions.</span></p>
+                </div>
+            </div>
+            <div class="accItem">
+                <div class="acc-head">Captin America</div>
+                <div class="acc-body">
+                    <p class="fw-bold ">Real name: <span class="fw-normal">Steve Rogers</span></p>
+                    <p class="fw-bold ">First Appearance: <span class="fw-normal"> Captain America Comics #1
+                            (1941)</span></p>
+                    <p class="fw-bold ">Creators: <span class="fw-normal">Joe Simon and Jack Kirby</span></p>
+                    <p class="fw-bold ">Powers/Abilities: <span class="fw-normal"> Peak human physical condition,
+                            master martial artist and hand-to-hand combatant, expert tactician, wielding an
+                            indestructible shield.</span></p>
+                </div>
+            </div>
+            <div class="accItem">
+                <div class="acc-head">Hulk</div>
+                <div class="acc-body">
+                    <p class="fw-bold ">Real name: <span class="fw-normal">Bruce Banner</span></p>
+                    <p class="fw-bold ">First Appearance: <span class="fw-normal">The Incredible Hulk #1
+                            (1962)</span></p>
+                    <p class="fw-bold ">Creators: <span class="fw-normal">Stan Lee and Jack Kirby</span></p>
+                    <p class="fw-bold ">Powers/Abilities: <span class="fw-normal"> Superhuman strength, durability,
+                            and regeneration, transforming into the Hulk when angry or stressed.</span></p>
+                </div>
+            </div>
+            <div class="accItem">
+                <div class="acc-head">Avengers</div>
+                <div class="acc-body">
+                    <p class="fw-bold ">First Appearance: <span class="fw-normal"> The Avengers #1 (1963)</span></p>
+                    <p class="fw-bold ">Creators: <span class="fw-normal">Stan Lee and Jack Kirby</span></p>
+                    <p class="fw-bold ">Original Team Members: <span class="fw-normal">Iron Man, Thor, Hulk,
+                            Ant-Man, and Wasp.</span></p>
+                    <p class="fw-bold ">Purpose: <span class="fw-normal">To combat threats that no single hero can
+                            handle alone.</span></p>
+                </div>
+            </div>
+            <div class="accItem">
+                <div class="acc-head">Stark Industries</div>
+                <div class="acc-body">
+                    <p class="fw-bold ">Owner: <span class="fw-normal">tony stark</span></p>
+                    <p class="fw-bold ">First Appearance: <span class="fw-normal"> Tales of Suspense #40
+                            (1963)</span></p>
+                    <p class="fw-bold ">Industry: <span class="fw-normal"> Multinational industrial company
+                            primarily known for advanced weaponry and technology.</span></p>
+                    <p class="fw-bold ">Significance: <span class="fw-normal"> Stark Industries is central to Tony
+                            Stark’s identity as Iron Man, funding his technological advancements and the Avengers. The
+                            company shifts focus from weapons manufacturing to clean energy and technology under Tony’s
+                            guidance.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contactinfo">
+                        <h1 class="pb-4">CONTACT INFO</h1>
+                        <p><i class="fa-solid fa-location-dot text-danger"></i> New Street 22545, Nexa Road, New York
+                            City, USA</p>
+                        <p><i class="fa-solid fa-envelope text-danger"></i> hello@uigrid.com</p>
+                        <p><i class="fa-solid fa-phone text-danger"></i></i> 001-000-000-000</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myform">
+                        <input type="text" class="form-control bg-transparent text-light mb-3" placeholder="Name">
+                        <input type="email" class="form-control bg-transparent text-light mb-3" placeholder="Email">
+                        <textarea name="message" id="message" placeholder="message..."
+                            class="form-control bg-transparent mb-3 text-light"></textarea>
+                        <p id="messagectr"><span id="messagecounter" class="text-danger">100 word</span> remaining </p>
+                        <button class="btn btn-danger">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
