@@ -98,7 +98,7 @@
 
 
 #home {
-    height: 800px;
+    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.458), rgba(0, 0, 0, 0.675)), url('../images/54684.jpg');
     background-attachment: fixed;
     background-position: center;
