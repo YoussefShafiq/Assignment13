@@ -156,6 +156,8 @@ $('.seetime').on('click', function () {
     console.log(targettime);
 })
 
+datecountdown(calculateTimeDifference('2024-07-14T23:59:59'))
+
 
 
 
@@ -166,8 +168,6 @@ $('#message').on('input', function () {
     let remaining = 100 - len
     if (remaining >= 0) {
         $('#messagecounter').text(remaining)
-    } else {
-        $('#messagecounter').text('you exceded the limit')
     }
     console.log(len);
 })
@@ -181,5 +181,5 @@ $('.navitem').on('click', function () {
     $(this).addClass('active')
     let ahref = $(this).attr('href')
     let sectionoffset = $(ahref).offset().top
-    $('html, body').animate({ scrollTop: sectionoffset }, 1000);
+    $('html, body').animate({ scrollTop: sectionoffset }, 0);
 })
